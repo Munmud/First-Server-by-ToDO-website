@@ -31,7 +31,7 @@ function passwordProtected ( req , res , next ) {
 }
 app.use(passwordProtected)
 
-app.get('/' ,passwordProtected , (req , res) => {
+app.get('/'  , (req , res) => {
     db.collection('Items').find().toArray((err , items) => {
         res.send(`
             <!DOCTYPE html>
