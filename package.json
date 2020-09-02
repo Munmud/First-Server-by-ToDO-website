@@ -1,7 +1,7 @@
 {
   "name": "tododatabase-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "nil",
   "main": "server.js",
   "scripts": {
     "watch": "nodemon server",

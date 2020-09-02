@@ -9,7 +9,7 @@ let db
 let port = process.env.PORT
 if (port == null || port =="") port = 3000
 
-app.use(express.static('Public'))
+app.use(express.static('public'))
 
 let connectionString = 'mongodb+srv://toDoAppUser:myPass@cluster0.32yrq.mongodb.net/Moontasir_First_Try?retryWrites=true&w=majority'
 mongodb.connect( connectionString , { useNewUrlParser : true } , ( err , client ) => {
